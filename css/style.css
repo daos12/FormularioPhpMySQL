@@ -1,0 +1,19 @@
+.tamanhoContainer{
+    width: 500px;
+    margin-bottom: 30px;
+    margin-top: 50px
+}
+
+.botao{ 
+    text-align: right; /* vai colocar o botão para direita*/
+
+}
+
+h3{
+    text-align: center;
+}
+/* Exemplo de como editar um botão abaixo
+ .argola{
+    background-color: #FF1168;
+    color: white;
+} */
