@@ -18,12 +18,12 @@
 
 <body>
     <div class="container tamanhoContainer" style="margin-top: 40px">
-
         <form action="inserirProduto.php" method="post"> 
             <!-- Inserir php  -->
             <?php
                 //Pegar código no sql select 
-                $sql = "SELECT * FROM `produtos` WHERE idEstoque = $id";
+                $sql = "SELECT * FROM `produtos` WHERE idProduto = $id"; 
+                
                 $buscar = mysqli_query($conexao,$sql);
                 
                 while($array = mysqli_fetch_array($buscar)){
@@ -45,22 +45,18 @@
                 <label>Numero do Produto: </label>
                 <!-- Adicionando para traser as infos do banco como get -->
                 <input type="number" class="form-control" name="numeroProduto" value="<?php echo $numeroProduto?>"> 
-
             </div>
             <div class="form-group">
                 <label>Nome do Produto: </label>
-                <input type="text" class="form-control" name="nomeProduto value="<?php echo $nomeProduto?>">
-
+                <input type="text" class="form-control" name="nomeProduto" value="<?php echo $nomeProduto?>">
             </div>
             <div class="form-group">
                 <label>Quantidade: </label>
-                <input type="number" class="form-control" name="qtdProduto value="<?php echo $qtdProduto?>" >
-
+                <input type="number" class="form-control" name="qtdProduto" value="<?php echo $qtdProduto?>" >
             </div>
             <div class="form-group">
-
                 <label>Categoria</label>
-                <select class="form-control" name="catProduto value="<?php echo $catProduto?>" >
+                <select class="form-control" name="catProduto" value="<?php echo $catProduto?>" >
 
                     <option>Periféricos</option>
                     <option>Hardware</option>
@@ -70,7 +66,7 @@
             </div>
             <div class="form-group">
                 <label>Fornecedores</label>
-                <select class="form-control" name="fornProduto value="<?php echo $fornProduto?>" >
+                <select class="form-control" name="fornProduto" value="<?php echo $fornProduto?>" >
 
                     <option>Microsoft </option>
                     <option>Aplee</option>
@@ -79,7 +75,6 @@
                 </select>
             </div>
             <div class="botao">
-
                 <button type="submit" class="btn btn-secondary">Atualizar</button> <!-- Alterar type para submit-->
             </div>
             <?php } ?>
