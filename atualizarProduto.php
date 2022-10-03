@@ -5,12 +5,13 @@
     //não tem ID PRODUTO!
     $numeroProduto  = $_POST['numeroProduto'];
     $nomeProduto    = $_POST['nomeProduto'];
-    $qtdProduto     = $_POST['qtdProduto'];
     $catProduto     = $_POST['catProduto'];
+    $qtdProduto     = $_POST['qtdProduto'];
     $fornProduto    = $_POST['fornProduto'];
 
     //Pegar comando update/atualizar no sql
-    $sql = "UPDATE `produtos` SET `numeroProduto`= $numeroProduto,`nomeProduto`='$nomeProduto', `qtdProduto`= $qtdProduto,`catProduto`='$catProduto',`fornProduto`='$fornProduto' WHERE $idProduto = $id";
+    // echo $sql = "UPDATE `produtos` SET `numeroProduto`= $numeroProduto,`nomeProduto`='$nomeProduto',`catProduto`='$catProduto', `qtdProduto`= $qtdProduto,`fornProduto`='$fornProduto' WHERE $idProduto = $id";
+    $sql = "UPDATE `produtos` SET `numeroProduto`= $numeroProduto,`nomeProduto`='$nomeProduto',`catProduto`='$catProduto', `qtdProduto`= $qtdProduto,`fornProduto`='$fornProduto' WHERE idProduto = $id";
        
     $atualizar = mysqli_query($conexao,$sql);
 

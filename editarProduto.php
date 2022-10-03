@@ -46,7 +46,7 @@
                 <!-- Adicionando para traser as infos do banco como get -->
                 <input type="number" class="form-control" name="numeroProduto" value="<?php echo $numeroProduto?>"> 
 
-                <input type="number" class="form-control" name="id" value="<?php echo $id?>" style="display: none"> <!-- Inserir no final para add ID -->
+                <input type="number" class="form-control" name="id" value = "<?php echo $id?>" style="display: none"> <!-- Inserir no final para add ID -->
 
             </div>
             <div class="form-group">
