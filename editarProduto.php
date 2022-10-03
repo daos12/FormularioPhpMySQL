@@ -18,7 +18,7 @@
 
 <body>
     <div class="container tamanhoContainer" style="margin-top: 40px">
-        <form action="inserirProduto.php" method="post"> 
+        <form action="atualizarProduto.php" method="post"> <!-- Criar um novo arquivo php -->
             <!-- Inserir php  -->
             <?php
                 //Pegar código no sql select 
@@ -45,6 +45,9 @@
                 <label>Numero do Produto: </label>
                 <!-- Adicionando para traser as infos do banco como get -->
                 <input type="number" class="form-control" name="numeroProduto" value="<?php echo $numeroProduto?>"> 
+
+                <input type="number" class="form-control" name="id" value="<?php echo $id?>" style="display: none"> <!-- Inserir no final para add ID -->
+
             </div>
             <div class="form-group">
                 <label>Nome do Produto: </label>
@@ -56,7 +59,7 @@
             </div>
             <div class="form-group">
                 <label>Categoria</label>
-                <select class="form-control" name="catProduto" value="<?php echo $catProduto?>" >
+                <select class="form-control" name="catProduto">
 
                     <option>Periféricos</option>
                     <option>Hardware</option>
@@ -66,7 +69,7 @@
             </div>
             <div class="form-group">
                 <label>Fornecedores</label>
-                <select class="form-control" name="fornProduto" value="<?php echo $fornProduto?>" >
+                <select class="form-control" name="fornProduto" >
 
                     <option>Microsoft </option>
                     <option>Aplee</option>
