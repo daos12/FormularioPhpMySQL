@@ -46,8 +46,13 @@
                     <td><?php echo $qtdProduto; ?> </td>
                     <td><?php echo $catProduto; ?> </td>
                     <td><?php echo $fornProduto; ?> </td>
-                    <td><a class="btn btn-secundary" style="text-decoration: none; color: black ;" 
-                        href="editarProduto.php?id=<?php echo $idProduto?>" role="button">Editar</a> 
+                    <td><a class="btn btn-secundary" style="text-decoration: none; color: blue ;" 
+                        href="editarProduto.php?id=<?php echo $idProduto?>" role="button">Editar</a> <!-- Botão EDITAR -->
+                    
+                        <a class="btn btn-secundary" style="text-decoration: none; color: red ;" 
+                        href="deletarProduto.php?id=<?php echo $idProduto?>" role="button">Excluir</a><!-- Botão EXCLUIR -->
+                    
+                    
                     </td>   <!-- Colocar depois que a visualização funcionar -->
                             <!-- Mostrar as mudanças do id na parte de baixo do site -->
                     

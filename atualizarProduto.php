@@ -10,7 +10,8 @@
     $fornProduto    = $_POST['fornProduto'];
 
     //Pegar comando update/atualizar no sql
-    $sql = "UPDATE `produtos` SET `numeroProduto`= $numeroProduto,`nomeProduto`='$nomeProduto', `qtdProduto`= $qtdProduto,`catProduto`='$catProduto',`fornProduto`='$fornProduto' WHERE $idProduto = $id";
+    $sql = "UPDATE `produtos` SET `numeroProduto`= $numeroProduto,
+    `nomeProduto`='$nomeProduto', `qtdProduto`= $qtdProduto,`catProduto`='$catProduto',`fornProduto`='$fornProduto' WHERE idProduto = $id";
        
     $atualizar = mysqli_query($conexao,$sql);
 
