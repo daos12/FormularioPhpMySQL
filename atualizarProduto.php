@@ -23,7 +23,7 @@
     <div class="container" style="width: 300px; text-align: center; padding-top: 50px;">
     <h4>Produto atualizado com Sucesso!</h4>
     <div style="padding-top: 20px;">
-        <a href="listarProdutos.php" role="button" class="btn btn-sm btn-secondary">Voltar</a>
+        <a href="index.php" role="button" class="btn btn-sm btn-secondary">Voltar</a>
     </div>
 </div>
 

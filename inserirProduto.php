@@ -33,6 +33,6 @@ include 'conexao.php';
 <div class="container" style="width: 300px; text-align: center; padding-top: 50px;">
     <h4>Produto Adicionado com Sucesso!</h4>
     <div style="padding-top: 20px;">
-        <a href="index.php" role="button" class="btn btn-sm btn-secondary">Cadastrar novo Ítem</a>
+        <a href="index.php" role="button" class="btn btn-sm btn-secondary">Voltar</a>
     </div>
 </div>
